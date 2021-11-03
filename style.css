@@ -198,35 +198,78 @@ div.contact-main-div {
     padding-top: 30px;
     padding-left: 10px;
     padding-right: 10px;
-    height: 600px;
-    background-image: url(bg-contact.png);
+    height: fit-content;
+    background: url(bg-contact.png) fixed;
     color: white;
     border-bottom: 2px solid #e51b23;
     border-top: 3px solid #e51b23;
     text-align: center;
 }
 
-h1.h1-contact {
-    font-size: 25px;
-    font-weight: normal;
+@media only screen and (max-width: 600px) {
+    div.contact-main-div {
+        height: fit-content;
+    }
 }
 
-p.p-request {
-    font-size: 20px;
+.form-label {
+    margin-bottom: 5px;
+    margin-right: 230px;
 }
 
-a.link-contact {
-    padding-right: 35px;
-    color: white;
-    font-size: 18px;
+input[type=text], input[type=email], textarea {
+    border: none;
+    border-radius: 5px;
+    padding: 12px 90px 12px 10px;
+    transition: width 0.4s ease-in-out;
+    color: #0c0c0c;
+}
+
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+    border: none;
+    outline: 1px solid #E51B23;
+    border-radius: 5px;
+    padding: 12px 90px 12px 10px;
+    width: 20%;
+}
+
+
+textarea {
+    font-family: Oswald, sans-serif;
+    margin-top: 15px;
+    width: 170px;
+    max-width: 300px;
+}
+
+.btn-contact {
+    margin-top: 12px;
+    padding: 8px 107px;
+    border: none;
+    background: #E51B23;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 7px;
+    cursor: pointer;
+    
+}
+
+.btn-contact:hover {
+    filter: brightness(65%);
 }
 
 ul {
+    text-align: center;
+    border-radius: 10px;
     list-style: none;
+    background: #ffffff;
+    display: inline-flex;
+    padding: 8px 5px 8px 15px;
 }
 
 li {
-    margin-top: 10px;
+    margin-right: 10px;
+    text-align: center;
 }
 
 a:hover {
