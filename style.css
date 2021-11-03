@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
 
 html, body {
+    background: #ffffff;
     font-family: Oswald, sans-serif;
     margin: 0;
     padding: 0;
@@ -79,7 +80,7 @@ a.marked {
 div.main-div {
     border-top: 3px solid #e51b23;
     display: block;
-    background-image: url(bg-div.png);
+    background: url(bg-div.png) fixed;
     height: 450px;
     padding-left: 20px;
 }
@@ -124,7 +125,7 @@ div.icons-div {
 }
 
 section#main-content {
-    background-image: url(bc-content.png);
+    background: url(bc-content.png) fixed;
     margin-top: 30px;
     padding-left: 80px;
     padding-bottom: 50px;
