@@ -290,3 +290,42 @@ a:hover {
     transition: 0.3s all ease-in-out;
     color: #e51b23;
 }
+ 
+/* thanks page */
+
+.thanks-body {
+    background: url(bg-contact.png);
+}
+
+.thanks-txt {
+    margin-top: 150px;
+    font-size: 50px;
+}
+
+.thanks-btn {
+    background: #E51B23;
+    color: #ffffff;
+    font-size: 19px;
+    padding: 20px 65px 20px 65px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-left: 370px;
+    text-align: center;
+}
+
+.thanks-btn:hover {
+    filter: brightness(65%);
+}
+
+@media only screen and (max-width: 600px) {
+    .thanks-btn {
+        margin: 1px 1px 1px 90px;
+       
+    }
+}
+
+.sec-thanks>h2 {
+    color: #ffffff;
+    text-align: center;
+}
