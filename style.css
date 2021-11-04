@@ -323,7 +323,8 @@ a:hover {
     border: none;
     border-radius: 8px;
     margin-top: 20px;
-    margin-left: 370px;
+    margin-left: 530px;
+    cursor: pointer;
     text-align: center;
 }
 
