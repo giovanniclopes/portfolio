@@ -37,7 +37,6 @@ div.main-menu {
         font-size: 18px;
         bottom: 0;
         margin: auto;
-        padding-left: 80px;
         text-align: center;
     }
 }
@@ -54,9 +53,9 @@ div.main-menu>a {
 
 @media only screen and (max-width: 600px) {
     div.main-menu>a {
-        width: 30px;
-        padding: 1px;
-       margin-right: 70px;
+    width: 30px;
+    padding: 1px;
+    margin-right: 70px;
     }
 }
 
