@@ -55,8 +55,9 @@ div.main-menu>a {
     div.main-menu>a {
     width: 30px;
     padding: 1px;
-    margin-left: 45px;
-    padding-right: 15px ;
+    margin-left: 50px;
+    padding-left: 8px;
+    
     }
 }
 
