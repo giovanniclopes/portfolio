@@ -129,7 +129,7 @@ a.marked {
 div.main-div {
     border-top: 3px solid #e51b23;
     display: block;
-    background: url(bg-div.png) fixed;
+    background: url(bg-div.webp) fixed;
     height: 500px;
     padding-left: 20px;
 }
@@ -181,7 +181,7 @@ div.icons-div {
 }
 
 section#main-content {
-    background: url(bc-content.png) fixed center;
+    background: url(bc-content.webp) fixed center;
     margin-top: 30px;
     padding-left: 80px;
     padding-bottom: 50px;
@@ -216,7 +216,7 @@ div.column-2 {
 div.site-request {
     border-top: 2px solid #e51b23;
     padding: 60px 0 60px 0;
-    background-image: url(bc-request.png);
+    background-image: url(bc-request.webp);
     text-align: center;
     color: white;
 }
@@ -269,7 +269,7 @@ div.contact-main-div {
     padding-left: 10px;
     padding-right: 10px;
     height: fit-content;
-    background: url(bg-contact.png) fixed;
+    background: url(bg-contact.webp) fixed;
     color: white;
     border-bottom: 2px solid #e51b23;
     border-top: 3px solid #e51b23;
@@ -363,7 +363,7 @@ a:hover {
 /* thanks page */
 
 .thanks-body {
-    background: url(bg-contact.png);
+    background: url(bg-contact.webp);
 }
 
 .thanks-txt {
