@@ -30,17 +30,12 @@ div.main-menu {
 
 @media only screen and (max-width: 600px) {
     div.main-menu {
-        height: 25px;
-        z-index: 1;
-        border-top: 1px solid #e51b2280;
-        font-size: 18px;
-        bottom: 0;
-        margin: auto;
-        padding-top: 1px;
-        text-align: center;
+        position: relative;
+        width: auto;
+        padding: 10px;
     }
+    
 }
-
 
 div.main-menu>a {
     margin: 7px 8px 7px 7px;
@@ -53,13 +48,11 @@ div.main-menu>a {
 
 @media only screen and (max-width: 600px) {
     div.main-menu>a {
-    width: 30px;
-    padding: 1px;
-    margin-left: 50px;
-    padding-left: 8px;
-    
+        margin: 7px 1px 7px 10px;
     }
+    
 }
+
 
 div.main-menu>a:hover {
     color: #630f12;
@@ -70,45 +63,23 @@ a.marked {
     color: #e51b23;
 }
 
-@media only screen and (max-width: 600px) {
-    a.marked {
-        content: url(hoem-icon.png);
-    }
-}
+.btn-menu {
+    color: white;
+    background-color: #e51b23;
+    margin-right: 20px;
+    padding: 12px 16px 12px 16px;
+    font-size: 19px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.253);
+    cursor: pointer;
+    -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 
-@media only screen and (max-width: 600px) {
-    .project-menu {
-        content: url(project-icon.png);
-    }
-}
-
-@media only screen and (min-width: 600px) {
-    .btn-menu {
-        color: white;
-        background-color: #e51b23;
-        margin-right: 20px;
-        padding: 12px 16px 12px 16px;
-        font-size: 19px;
-        border: none;
-        border-radius: 20px;
-        box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.253);
-        cursor: pointer;
-        -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-            animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-    
-    }
 }
 
 .btn-menu:hover {
     filter: brightness(75%);
-}
-
-@media only screen and (max-width: 600px) {
-    .btn-menu {
-        display: none;
-        content: url(contacts.png);
-        
-    }
 }
 
 .contact-menu {
@@ -116,12 +87,6 @@ a.marked {
     content: url(contacts.png); 
 }
 
-@media only screen and (max-width: 600px) {
-    .contact-menu {
-        display: inline-flex;
-        content: url(contacts.png); 
-    }
-}
 
 /* start the content */
 
@@ -221,9 +186,9 @@ div.site-request {
 }
 
 button.request-btn {
-    font-size: 17px;
-    font-weight: bold;
-    padding: 10px 15px 10px 15px;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 14px 16px 14px 16px;
     background-color: #E51B23;
     border: 1px;
     border-radius: 30px;
