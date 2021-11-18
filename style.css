@@ -19,7 +19,7 @@ div.main-menu {
     display: block;
     background: rgb(255, 255, 255);
     height: 45px;
-    width: 100%;
+    width: auto;
     padding: 15px;
     text-align: right;
     margin-top: 0;
@@ -28,8 +28,7 @@ div.main-menu {
 
 @media only screen and (max-width: 600px) {
     div.main-menu {
-        width: auto;
-        padding: 10px;
+        padding: 10px 10px 15px 10px;
     }
 }
 
@@ -89,7 +88,7 @@ a.marked {
 div.main-div {
     border-top: 3px solid #e51b23;
     background: url(bg-div.webp) fixed;
-    height: 600px;
+    height: 500px;
     padding-left: 20px;
 }
 
@@ -104,7 +103,7 @@ div.main-div {
 p.below-h1-div {
     font-size: 30px;
     color: white;
-    padding-top: 230px;
+    padding-top: 130px;
     margin-bottom: 0;
     animation: SlideDown 0.5s linear;
 }
@@ -255,46 +254,61 @@ div.contact-main-div {
     }
 }
 
-.form-label {
+.form-label{
+    font-size: 20px;
     margin-bottom: 5px;
-    margin-right: 230px;
+    margin-right: 555px;
+}
+
+@media only screen and (max-width: 600px) {
+    .form-label {
+        margin-right: 350px;
+    }
 }
 
 input[type=text], input[type=email], textarea {
-    border: none;
+    font-size: 16px;
+    border: 1px solid #e51b23;
+    width: 500px;
+    height: 20px;
     border-radius: 5px;
     padding: 12px 90px 12px 10px;
     transition: width 0.4s ease-in-out;
     color: #0c0c0c;
 }
 
+@media only screen and (max-width: 600px) {
+    input[type=text], input[type=email], textarea {
+        width: 300px;
+    }
+}
 
 input[type=text]:focus, input[type=email]:focus, textarea:focus {
     border: none;
-    outline: 1px solid #E51B23;
+    outline: none;
     border-radius: 5px;
     padding: 12px 90px 12px 10px;
-    width: 15%;
+    width: 43%;
 }
 
 @media only screen and (max-width: 600px) {
     input[type=text]:focus, input[type=email]:focus, textarea:focus {
-        width: 55%;
+        width: 63%;
     }
 }
 
-
 textarea {
     font-family: Oswald, sans-serif;
+    font-size: 16px;
+    width: 500px;
     margin-top: 15px;
-    width: 170px;
     max-width: 300px;
-    height: 50px;
+    height: 70px;
 }
 
 .btn-contact {
     margin-top: 12px;
-    padding: 14px 107px;
+    padding: 14px 175px;
     background: #E51B23;
     color: #ffffff;
     font-size: 16px;
