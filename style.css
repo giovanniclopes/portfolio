@@ -101,7 +101,8 @@ div.main-div {
 }
 
 p.below-h1-div {
-    font-size: 30px;
+    font-size: 35px;
+    text-align: center;
     color: white;
     padding-top: 130px;
     margin-bottom: 0;
@@ -117,8 +118,8 @@ p.below-h1-div {
 
 h1.title-div {
     margin-top: 0;
-    text-align: left;
-    font-size: 65px;
+    text-align: center;
+    font-size: 80px;
     color: white;
     animation: SlideDown 0.5s linear;
 }
