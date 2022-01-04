@@ -126,9 +126,11 @@ h1.title-div {
 
 @media only screen and (max-width: 600px){
     h1.title-div {
-        font-size: 50px;
+        font-size:45px;
     }
 }
+
+/* skills */
 
 div.hability-div {
     margin-top: 50px;
@@ -152,6 +154,63 @@ div.icons-div {
     width: 4rem;
     padding-left: 20px;
 }
+
+.skills {
+    display: inline-flex;
+    margin-left: 5px;
+}
+
+@media only screen and (max-width: 600px){
+    .skills {
+        display: block;
+        margin-left: 20px;
+    }
+}
+
+
+.skill1, .skill2, .skill3, .skill4 {
+    text-align: center;
+    padding-top: 20px;
+    margin: 2px;
+}
+.skill1 {
+    background-color: #ac4a00;
+    width: 320px;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.skill2 {
+    background-color: #006297;
+    width: 320px;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.skill3 {
+    background-color: #c9a700;
+    width: 320px;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.skill4 {
+    background-color: #003c69;
+    width: 320px;
+    height: 250px;
+    border-radius: 5px;
+
+}
+
+.skill-text {
+    padding: 10px;
+    background-color: #0c0c0c;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    height: 145px;
+    border-radius: 0px 0px 5px 5px;
+}
+/* end skills */
 
 section#main-content {
     background: url(bc-content.webp) fixed center;
