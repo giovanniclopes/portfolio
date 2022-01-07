@@ -3,32 +3,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 
 :root {
-    --main-color: #e51b23;
+    --main-color: #cd5c5c;
     --secundary-color: #d9d9d9;
     --bc-color: #0e0e0e;
     --font: 'Poppins', sans-serif;
 }
 
 html, body {
-    background-color: #000000;
+    background-image: url('Background.png');
+    background-attachment: fixed;
+    background-position: right;
+    background-size: cover;
+    margin: 0;
+    font-family: var(--font);
 }
 
-.navbar {
+/*navbar*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
     background-color: var(--bc-color);
-    position: absolute;
-    display: inline-flex;
-    width: 93.9%;
+    overflow: hidden;
+    position: relative;
     top: 0;
-    left: 0;
-    right: 0;
-    padding: 30px 0px 30px 80px;
+    
 }
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
 
 .navbar-item {
-    font: bold 18px 'Poppins', sans-serif;
+    font: bold 17px 'Poppins', sans-serif;
     color: var(--secundary-color);
     text-decoration: none;
-    padding: 20px;
+    padding: 17px 16px;
 }
 
 .navbar-item:hover {
@@ -36,20 +54,110 @@ html, body {
     transition: .4s ease;
 }
 
-.column-1 {
-    position: left;
-}
-
-.column-2 {
-    position: right;
-    padding-left: 500px;
-}
-
 .linkedinIcon, .githubIcon, .emailIcon {
-    padding-right: 20px;
+    padding: 17px 7px;
+}
+
+.linkedinIcon {
+    margin-left: 380px;
 }
 
 .linkedinIcon:hover path, .githubIcon:hover path, .emailIcon:hover path {
     fill: var(--main-color);
+    transition: .4s ease;
+}
+
+/* first section */
+
+.apresentation-text-left {
+    float: left;
+    width: 50%;
+    padding: 50px 30px 30px 70px;
+}
+
+.apresentation-text-left h1, p {
+    color: var(--secundary-color);
+    font: bold 75px 'Poppins', sans-serif;
+}
+
+.apresentation-text-left p {
+    color: var(--secundary-color);
+    font: bold 70px 'Poppins', sans-serif;
+    margin-top: -70px;
+}
+
+p.little-text {
+    font: bold 30px 'Poppins' , sans-serif;
+    color: var(--main-color)
+}
+
+.apresentation-image-right {
+    margin: 80px auto 20px 20px;
+    float: right;
+    width: 40%;
+}
+
+.profile-image {
+    width: 65%;
+    outline: 7px solid #cd5c5c;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+/* about me section */
+
+.about-me {
+    color: var(--secundary-color);
+    padding: 70px;
+    margin-top: 450px;
+}
+
+.about-me-title {
+    font-size: 45px;
+    text-align: center;
+    color: var(--main-color);
+}
+
+.about-me-text {
+    font: normal 22px var(--font);
+}
+
+/* skills section */
+
+.skills {
+    color: var(--secundary-color);
+    padding: 10px 70px 30px 70px;
+}
+
+.skills-title {
+    font-size: 45px;
+    text-align: center;
+    color: var(--main-color);
+}
+
+/* skills left and right */
+
+.skill-text {
+    font: normal 22px var(--font);
+}
+
+
+.skill1, .skill2, .skill3, .skill4 {
+    display: inline-flex;
+    width: 300px;
+    height: 60px;
+    padding: 20px;
+    background: #1A1A1A;
+    border-right: 2px solid var(--main-color);
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.skill1, .skill3 {
+    margin-left: 240px;
+}
+
+.skill1:hover , .skill2:hover , .skill3:hover , .skill4:hover {
+    background-color: #202020;
     transition: .4s ease;
 }
