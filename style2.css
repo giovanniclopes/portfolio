@@ -18,54 +18,176 @@ html, body {
     font-family: var(--font);
 }
 
-/*navbar*/
+/*menu*/
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 20px;
-    background-color: var(--bc-color);
-    overflow: hidden;
-    position: relative;
-    top: 0;
-    
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
+.menu-item {
+    color: #fffcf8;
     text-decoration: none;
-  }
+}
 
-.navbar-item {
-    font: bold 17px 'Poppins', sans-serif;
+
+#logo-image {
+    width: 50%;
+}
+
+#header {
+    z-index: 1000;
+    box-sizing: border-box;
+    height: 100px;
+    padding: 15px 50px 15px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bc-color);
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+#menu .home-menu-item {
+  color: var(--secundary-color);
+}
+
+#menu a {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    padding: 15px;
     color: var(--secundary-color);
     text-decoration: none;
-    padding: 17px 16px;
+    border-radius: 10px;
 }
 
-.navbar-item:hover {
+#menu a:hover {
     color: var(--main-color);
     transition: .4s ease;
 }
 
-.linkedinIcon, .githubIcon, .emailIcon {
-    padding: 17px 7px;
+#menu .menu-item::after {    
+    content: "";
+    background: none repeat scroll 0 0 transparent;
+    display: block;
+    height: 2px;
+    margin-top: 10px;
+    left: 50%;
+    background: currentColor;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    border-radius: 200px;
 }
 
-.linkedinIcon {
-    margin-left: 380px;
+#menu .menu-item:hover::after { 
+    width: 100%; 
+    left: 0;
+  }
+  
+#btn-mobile {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    #header {
+      padding: 0 10px 0 10px;
+      background: var(--bc-color);
+    }
+
+    #logo-image {
+        width: 70px;
+    }    
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 85px;
+        right: 0px;
+        background: var(--bc-color);
+        border-radius: 5px;
+        transition: .6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #nav.active #menu {
+        height: calc(100vh - 30vh);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #menu a {
+        padding: 25px 0;
+        font-size: 20px;
+        margin: 0 20px;
+        border-bottom: 2px solid rgba(46, 46, 46, 0.1);
+        border-radius: 5px;
+    }
+    #btn-mobile {
+        color: var(--secundary-color);
+        display: flex;
+        padding: 10px 20px;
+        font-size: 18px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 10px;
+    }
+    #hamburguer {
+        color: var(--main-color);
+        display: block;
+        border-top: 2px solid;
+        width: 20px;
+    }
+    #hamburguer::after, #hamburguer::before {
+        content: '';
+        position: relative;
+        display: block;
+        width: 20px;
+        height: 2px;
+        border-radius: 10px;
+        background-color: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+    }
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+    #menu a:hover::after { 
+        width: 28%; 
+        left: 0;
+      }    
+}
+
+li {
+    list-style: none;
+}
+
+#social-icon-top {
+    margin-left: 350px;
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    #social-icon-top {
+        display: none;
+    }
 }
 
 .linkedinIcon:hover path, .githubIcon:hover path, .emailIcon:hover path {
     fill: var(--main-color);
-    transition: .4s ease;
+    transition: .3s ease;
 }
+/*end menu*/
 
 /* first section */
 
@@ -113,13 +235,13 @@ p.little-text {
 }
 
 .about-me-title {
-    font-size: 45px;
+    font-size: 40px;
     text-align: center;
     color: var(--main-color);
 }
 
 .about-me-text {
-    font: normal 22px var(--font);
+    font: normal 20px var(--font);
 }
 
 /* skills section */
@@ -148,7 +270,6 @@ p.little-text {
     height: 60px;
     padding: 20px;
     background: #1A1A1A;
-    border-right: 2px solid var(--main-color);
     margin-bottom: 15px;
     border-radius: 10px;
 }
