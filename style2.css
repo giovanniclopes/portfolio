@@ -191,10 +191,13 @@ li {
 
 /* first section */
 
+.apresentation {
+    display: block;
+}
+
 .apresentation-text-left {
     float: left;
-    width: 50%;
-    padding: 50px 30px 30px 70px;
+    padding: 50px 30px 30px 150px;
 }
 
 .apresentation-text-left h1, p {
@@ -214,7 +217,7 @@ p.little-text {
 }
 
 .apresentation-image-right {
-    margin: 80px auto 20px 20px;
+    margin: 80px 50px 20px 20px;
     float: right;
     width: 40%;
 }
@@ -226,12 +229,49 @@ p.little-text {
     border-radius: 50%;
 }
 
+@media (max-width: 600px) {
+    .apresentation {
+        padding-bottom: 150px;
+    }
+    .apresentation-image-right {
+        margin: 0 70px;
+        float: none;
+        width: 100%;
+        position: absolute;
+        top: 160px;
+    }
+    .apresentation-text-left {
+        font-size: 22px;
+        width: auto;
+        float: none;
+        padding: auto;
+        position: absolute;
+        bottom: -150px;
+        right: 20px;
+    }
+
+    .apresentation-text-left > h1 {
+        color: var(--secundary-color);
+        font: bold 45px 'Poppins', sans-serif;
+        line-height: 20px;
+    }
+    
+    .apresentation-text-left p {
+        color: var(--main-color);
+        font: bold 25px 'Poppins', sans-serif;
+        line-height: 1px;
+        margin-top: -10px;
+        width: 300px;
+    }
+    
+}
+
 /* about me section */
 
 .about-me {
     color: var(--secundary-color);
     padding: 70px;
-    margin-top: 450px;
+    margin: 450px 150px auto 150px;
 }
 
 .about-me-title {
@@ -242,6 +282,12 @@ p.little-text {
 
 .about-me-text {
     font: normal 20px var(--font);
+}
+
+@media (max-width: 600px) {
+    .about-me {
+        margin: 450px auto 5px auto;
+    }
 }
 
 /* skills section */
@@ -256,6 +302,7 @@ p.little-text {
     text-align: center;
     color: var(--main-color);
 }
+
 
 /* skills left and right */
 
@@ -282,3 +329,85 @@ p.little-text {
     background-color: #202020;
     transition: .4s ease;
 }
+
+@media (max-width: 600px) {
+    .skill1, .skill3 {
+        margin-left: auto;
+    }
+}
+
+/* projects section */
+
+.projects {
+    margin-top: 150px;
+    margin-bottom: 550px;
+}
+
+.projects-title {
+    font-size: 50px;
+    text-align: center;
+    color: var(--main-color);
+}
+
+.project1-image {
+    float: left;
+    width: 50%;
+}
+
+.project1-text {
+    float: right;
+    width: 50%;
+    color: var(--secundary-color);
+}
+
+.project1-text > h3 {
+    font-size: 35px;
+}
+.project1-text > p {
+    font-size: 22px;
+}
+
+#project-nordician {
+    width: 90%;
+    padding-left: 55px;
+}
+
+@media (max-width: 600px) {
+    .projects {
+        margin-top: 100px;
+        margin-bottom: 80px;
+    }
+
+    .project1-image {
+        float: none;
+        width: auto;
+    }
+    .project1-text {
+        float: none;
+        width: auto;
+        padding: 20px;
+    }
+
+    .project1-text > h3 {
+        text-align: center;
+    }
+
+    #project-nordician {
+        padding-left: 20px;
+    }
+}
+
+/* footer */
+
+#footer {
+    display: block;
+    border-top: 3px solid var(--main-color);
+    background-color: var(--bc-color);
+  }
+  
+  .copyright {
+    padding: 25px;
+    text-align: center;
+    font: normal 18px 'Poppins', sans-serif;
+    color: var(--secundary-color);
+  }
