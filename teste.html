@@ -115,7 +115,7 @@
 
     <section class="contact" id="contact">
         <h2 class="contact-title">Contato</h2>
-        <form>
+        <form action="https://formsubmit.co/giovanniclopes@gmail.com" method="POST">
             <label for="name">Seu nome*</label><br>
             <input type="text" name="name" id="name" placeholder="me diga seu nome" required><br>
 
@@ -127,6 +127,8 @@
             <textarea name="message" id="message" cols="30" rows="5" placeholder="Olá! Eu gostaria de falar sobre {assunto}." required></textarea><br>
 
             <button type="submit" value="Enviar" id="contact-btn">Enviar</button>
+            <input type="hidden" name="_next" value="https://giovanniclopes.github.io/nordician/thanks.html">
+            <input type="hidden" name="_template" value="table">
         </form>
     </section>
 
