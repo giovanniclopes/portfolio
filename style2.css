@@ -203,6 +203,7 @@ li {
 .apresentation-text-left h1, p {
     color: var(--secundary-color);
     font: bold 75px 'Poppins', sans-serif;
+    line-height: 150px;
 }
 
 .apresentation-text-left p {
@@ -214,6 +215,10 @@ li {
 p.little-text {
     font: bold 30px 'Poppins' , sans-serif;
     color: var(--main-color)
+}
+
+p.middle-text {
+    margin-top: -100px;
 }
 
 .apresentation-image-right {
@@ -263,7 +268,10 @@ p.little-text {
         margin-top: -10px;
         width: 300px;
     }
-    
+    p.middle-text {
+        font-size: 40px;
+        line-height: 30px;
+    }
 }
 
 /* about me section */
@@ -306,6 +314,10 @@ p.little-text {
 
 /* skills left and right */
 
+.skills {
+    text-align: center;
+}
+
 .skill-text {
     font: normal 22px var(--font);
 }
@@ -321,20 +333,11 @@ p.little-text {
     border-radius: 10px;
 }
 
-.skill1, .skill3 {
-    margin-left: 240px;
-}
-
 .skill1:hover , .skill2:hover , .skill3:hover , .skill4:hover {
     background-color: #202020;
     transition: .4s ease;
 }
 
-@media (max-width: 600px) {
-    .skill1, .skill3 {
-        margin-left: auto;
-    }
-}
 
 /* projects section */
 
@@ -358,6 +361,10 @@ p.little-text {
     float: right;
     width: 50%;
     color: var(--secundary-color);
+}
+
+.text-project1 {
+    line-height: 40px;
 }
 
 .project1-text > h3 {
