@@ -236,7 +236,7 @@ p.middle-text {
 
 @media (max-width: 600px) {
     .apresentation {
-        padding-bottom: 150px;
+        padding-bottom: 30px;
     }
     .apresentation-image-right {
         margin: 0 70px;
@@ -294,7 +294,7 @@ p.middle-text {
 
 @media (max-width: 600px) {
     .about-me {
-        margin: 450px auto 5px auto;
+        margin: 650px auto 5px auto;
     }
 }
 
@@ -303,6 +303,12 @@ p.middle-text {
 .skills {
     color: var(--secundary-color);
     padding: 10px 70px 30px 70px;
+}
+
+@media (max-width: 600px) {
+    .skills {
+        padding: 10px 70px 30px 40px;
+    }
 }
 
 .skills-title {
@@ -486,7 +492,7 @@ textarea {
     }
     form {
         width: 80%;
-        margin-left: 20px;
+        margin-left: 15px;
         padding: 20px 20px 10px 30px;
     }
 }
