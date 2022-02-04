@@ -261,7 +261,6 @@ p.middle-text {
         float: none;
         padding: auto;
         position: absolute;
-        bottom: -10px;
         right: 20px;
     }
     .apresentation-title, .middle-text, .little-text {
