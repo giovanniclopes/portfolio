@@ -476,6 +476,11 @@ textarea {
 }
 
 @media (max-width: 600px) {
+    form {
+        width: 80%;
+        margin-left: 15px;
+        padding: 30px 25px 10px 25px;
+    }
     .contact {
         padding: 0;
         margin: auto auto 90px auto;
@@ -486,11 +491,6 @@ textarea {
     }
     #contact-btn {
         height: 50px;
-    }
-    form {
-        width: 80%;
-        margin-left: 15px;
-        padding: 20px 20px 10px 30px;
     }
 }
 
