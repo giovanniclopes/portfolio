@@ -249,7 +249,7 @@ p.middle-text {
 
 .profile-image {
     width: 65%;
-    outline: 7px solid #cd5c5c;
+    outline: 7px outset #cd5c5c;
     padding: 7px;
     border-radius: 50%;
 }
@@ -270,7 +270,6 @@ p.middle-text {
         border-right: none;
         overflow: visible;
     }
-
     .apresentation-text-left > h1 {
         color: var(--secundary-color);
         font: bold 45px 'Poppins', sans-serif;
@@ -469,15 +468,13 @@ input, textarea {
     border: none;
     border-radius: 5px;
     padding: 4px 4px 4px 10px;
-    color: #d3b5b5;
-    font-size: 16px;
-    font-weight: bold;
+    color: var(--secundary-color);
+    font: 500 16px 'Poppins', sans-serif;
 }
 
 textarea {
     height: 45px;
     padding: 10px;
-    font-size: 18px;
 }
 
 ::placeholder {
@@ -490,10 +487,10 @@ textarea {
 #contact-btn {
     border: none;
     border-radius: 5px;
-    width: 335px;
-    height: 40px;
+    width: 340px;
+    height: 50px;
     background: var(--main-color);
-    font: bold 14px 'Poppins', sans-serif;
+    font: bold 16px 'Poppins', sans-serif;
     color: var(--bc-color);
     cursor: pointer;
     margin-bottom: 35px;
@@ -537,4 +534,39 @@ textarea {
     text-align: center;
     font: normal 18px 'Poppins', sans-serif;
     color: var(--secundary-color);
+  }
+
+  ::-webkit-scrollbar {
+      width: 17px;
+      background: #000;
+  }
+
+  ::-webkit-scrollbar-track {
+      border-radius: 30px;
+      background: var(--bc-color);
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background: var(--main-color);
+      border-radius: 30px;
+  }
+
+  .back-to-top {
+      position: relative;
+      overflow: 2000;
+      left: 900px;
+      background-size: cover;
+      scroll-behavior: smooth;
+      height: max-content;
+      width: 60px;
+      height: 60px;
+      border: none;
+      border-radius: 200px;
+      cursor: pointer;
+  }
+
+  @media (max-width: 600px) {
+      .back-to-top {
+          display: none;
+      }
   }
