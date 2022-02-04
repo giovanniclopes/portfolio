@@ -261,6 +261,7 @@ p.middle-text {
         float: none;
         padding: auto;
         position: absolute;
+        bottom: 90px;
         right: 20px;
     }
     .apresentation-title, .middle-text, .little-text {
@@ -280,9 +281,6 @@ p.middle-text {
         line-height: 1px;
         margin-top: -10px;
         width: 300px;
-    }
-    .apresentation {
-        padding-bottom: 30px;
     }
     .apresentation-image-right {
         margin: 0 70px;
@@ -317,7 +315,7 @@ p.middle-text {
 
 @media (max-width: 600px) {
     .about-me {
-        margin: 650px auto 5px auto;
+        margin: 600px auto 5px auto;
     }
 }
 
