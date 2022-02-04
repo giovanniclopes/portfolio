@@ -243,6 +243,17 @@ p.middle-text {
         position: absolute;
         bottom: -50px;
         right: 20px;
+        animation: typing 2s steps(40), blink .5s step-end infinite alternate;
+    }
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+    }
+    @keyframes blink {
+        50% {
+            border-color: transparent;
+        }
     }
     .apresentation-text-left > h1 {
         color: var(--secundary-color);
