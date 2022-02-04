@@ -235,6 +235,26 @@ p.middle-text {
 }
 
 @media (max-width: 600px) {
+    .apresentation-text-left {
+        font-size: 22px;
+        width: auto;
+        float: none;
+        padding: auto;
+        position: absolute;
+        right: 20px;
+    }
+    .apresentation-text-left > h1 {
+        color: var(--secundary-color);
+        font: bold 45px 'Poppins', sans-serif;
+        line-height: 20px;
+    }
+    .apresentation-text-left p {
+        color: var(--main-color);
+        font: bold 25px 'Poppins', sans-serif;
+        line-height: 1px;
+        margin-top: -10px;
+        width: 300px;
+    }
     .apresentation {
         padding-bottom: 30px;
     }
@@ -244,29 +264,6 @@ p.middle-text {
         width: 80%;
         position: absolute;
         top: 160px;
-    }
-    .apresentation-text-left {
-        font-size: 22px;
-        width: auto;
-        float: none;
-        padding: auto;
-        position: absolute;
-        bottom: -50px;
-        right: 20px;
-    }
-
-    .apresentation-text-left > h1 {
-        color: var(--secundary-color);
-        font: bold 45px 'Poppins', sans-serif;
-        line-height: 20px;
-    }
-    
-    .apresentation-text-left p {
-        color: var(--main-color);
-        font: bold 25px 'Poppins', sans-serif;
-        line-height: 1px;
-        margin-top: -10px;
-        width: 300px;
     }
     p.middle-text {
         font-size: 40px;
