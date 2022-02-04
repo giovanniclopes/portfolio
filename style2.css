@@ -200,17 +200,37 @@ li {
     padding: 50px 30px 30px 150px;
 }
 
-.apresentation-text-left h1, p {
+.apresentation-text-left > h1, p {
     color: var(--secundary-color);
     font: bold 75px 'Poppins', sans-serif;
     line-height: 150px;
 }
+    
+      .apresentation-title, .middle-text, .little-text {
+        width: 500px;
+        overflow: hidden;
+        animation: typing 2s steps(40), blink .6s step-end infinite alternate;
+        border-right: 3px solid var(--secundary-color);
+    }
+    
+      @keyframes typing {
+          from {
+              width: 0;
+          }
+      }
+      @keyframes blink {
+          50% {
+              border-color: transparent;
+          }
+      }
+      
 
-.apresentation-text-left p {
-    color: var(--secundary-color);
-    font: bold 70px 'Poppins', sans-serif;
-    margin-top: -70px;
-}
+    .apresentation-text-left p {
+        white-space: nowrap;
+        color: var(--secundary-color);
+        font: bold 70px 'Poppins', sans-serif;
+        margin-top: -70px;
+    }
 
 p.little-text {
     font: bold 30px 'Poppins' , sans-serif;
@@ -243,18 +263,14 @@ p.middle-text {
         position: absolute;
         bottom: -50px;
         right: 20px;
-        animation: typing 2s steps(40), blink .5s step-end infinite alternate;
     }
-    @keyframes typing {
-        from {
-            width: 0;
-        }
+    .apresentation-title, .middle-text, .little-text {
+        width: auto;
+        animation: none;
+        border-right: none;
+        overflow: visible;
     }
-    @keyframes blink {
-        50% {
-            border-color: transparent;
-        }
-    }
+
     .apresentation-text-left > h1 {
         color: var(--secundary-color);
         font: bold 45px 'Poppins', sans-serif;
@@ -509,9 +525,11 @@ textarea {
 /* footer */
 
 #footer {
-    display: block;
+    display: flex;
     border-top: 3px solid var(--main-color);
     background-color: var(--bc-color);
+    align-items: center;
+    justify-content: center;
   }
   
   .copyright {
