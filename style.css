@@ -186,6 +186,7 @@ li {
 .linkedinIcon path, .githubIcon path, .emailIcon path {
     transition: .3s;
 }
+
 .linkedinIcon:hover path, .githubIcon:hover path, .emailIcon:hover path {
     fill: var(--main-color);
 }
