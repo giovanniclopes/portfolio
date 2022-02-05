@@ -183,9 +183,11 @@ li {
     }
 }
 
+.linkedinIcon path, .githubIcon path, .emailIcon path {
+    transition: .3s;
+}
 .linkedinIcon:hover path, .githubIcon:hover path, .emailIcon:hover path {
     fill: var(--main-color);
-    transition: .3s ease;
 }
 /*end menu*/
 
@@ -261,7 +263,7 @@ p.middle-text {
         float: none;
         padding: auto;
         position: absolute;
-        bottom: 90px;
+        bottom: 140px;
         right: 20px;
     }
     .apresentation-title, .middle-text, .little-text {
@@ -358,11 +360,11 @@ p.middle-text {
     background: #1A1A1A;
     margin-bottom: 15px;
     border-radius: 10px;
+    transition: .3s ease;
 }
 
 .skill1:hover , .skill2:hover , .skill3:hover , .skill4:hover {
     background-color: #202020;
-    transition: .4s ease;
 }
 
 
@@ -469,6 +471,10 @@ input, textarea {
     font: 500 16px 'Poppins', sans-serif;
 }
 
+input:focus, textarea:focus {
+    outline: 1px solid var(--main-color);
+}
+
 textarea {
     height: 45px;
     padding: 10px;
@@ -491,10 +497,11 @@ textarea {
     color: var(--bc-color);
     cursor: pointer;
     margin-bottom: 35px;
+    transition-duration: .3s;
 }
 
 #contact-btn:hover {
-    filter: brightness(80%);
+    filter: brightness(70%);
 }
 
 @media (max-width: 600px) {
@@ -548,22 +555,23 @@ textarea {
       border-radius: 30px;
   }
 
-  .back-to-top {
-      position: relative;
-      overflow: 2000;
-      left: 900px;
-      background-size: cover;
-      scroll-behavior: smooth;
-      height: max-content;
-      width: 60px;
-      height: 60px;
-      border: none;
-      border-radius: 200px;
-      cursor: pointer;
+
+  #myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px;
+    right: 10px; 
+    z-index: 999;
+    width: 65px;
+    background: var(--bc-color);
+    border: none; 
+    outline: none; 
+    cursor: pointer; 
+    border-radius: 200px;
+    opacity: 100%;
+    transition: opacity .5s;
   }
 
-  @media (max-width: 600px) {
-      .back-to-top {
-          display: none;
-      }
+  #myBtn:hover {
+    opacity: 60%;
   }
