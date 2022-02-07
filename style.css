@@ -212,7 +212,7 @@ li {
       .apresentation-title, .middle-text, .little-text {
         width: 500px;
         overflow: hidden;
-        animation: typing 2s steps(40), blink .6s step-end infinite alternate;
+        animation: typing 3s steps(60), blink .6s step-end infinite alternate;
         border-right: 3px solid var(--secundary-color);
     }
     
