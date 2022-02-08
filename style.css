@@ -54,7 +54,7 @@ html, body {
 #menu a {
     font-family: 'Poppins', sans-serif;
     margin-top: 15px;
-    font-size: 18px;
+    font-size: 1em;
     font-weight: bold;
     display: block;
     padding: 15px;
@@ -120,9 +120,9 @@ html, body {
     }
     #menu a {
         padding: 25px 0;
-        font-size: 20px;
+        font-size: 1em;
         margin: 0 20px;
-        border-bottom: 2px solid rgba(46, 46, 46, 0.1);
+        border-bottom: 2px solid rgba(54, 54, 54, 0.1);
         border-radius: 5px;
     }
     #btn-mobile {
@@ -212,7 +212,7 @@ li {
       .apresentation-title, .middle-text, .little-text {
         width: 500px;
         overflow: hidden;
-        animation: typing 3s steps(60), blink .6s step-end infinite alternate;
+        animation: typing 3s steps(55), blink .6s step-end infinite alternate;
         border-right: 3px solid var(--secundary-color);
     }
     
@@ -237,7 +237,9 @@ li {
 
 p.little-text {
     font: bold 30px 'Poppins' , sans-serif;
-    color: var(--main-color)
+    background: -webkit-linear-gradient(180deg,#cd5c5c, #c73939);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 p.middle-text {
@@ -245,7 +247,7 @@ p.middle-text {
 }
 
 .apresentation-image-right {
-    margin: 80px 50px 20px 20px;
+    margin: 80px 10px 20px 20px;
     float: right;
     width: 40%;
 }
@@ -437,7 +439,7 @@ p.middle-text {
 /*contact section */
 
 .contact {
-    margin: auto 100px 90px 450px;
+    margin: auto 100px 90px 400px;
     width: 300px;
 }
 
@@ -470,6 +472,9 @@ input, textarea {
     padding: 4px 4px 4px 10px;
     color: var(--secundary-color);
     font: 500 16px 'Poppins', sans-serif;
+    box-shadow: 15px 16px 56px -13px rgba(0,0,0,0.49);
+    -webkit-box-shadow: 15px 16px 56px -13px rgba(0,0,0,0.49);
+    -moz-box-shadow: 15px 16px 56px -13px rgba(0,0,0,0.49);
 }
 
 input:focus, textarea:focus {
@@ -542,19 +547,22 @@ textarea {
   }
 
   ::-webkit-scrollbar {
-      width: 17px;
+      width: 14px;
       background: #000;
   }
 
   ::-webkit-scrollbar-track {
       border-radius: 30px;
-      background: var(--bc-color);
+      background: rgb(37, 37, 37);
   }
 
   ::-webkit-scrollbar-thumb {
-      background: var(--main-color);
+      background: rgb(105, 105, 105);
       border-radius: 30px;
   }
+  ::-webkit-scrollbar-thumb:active {
+    background: var(--main-color);
+    }
 
 
   #myBtn {
@@ -575,4 +583,51 @@ textarea {
 
   #myBtn:hover {
     opacity: 60%;
+  }
+
+  /* thanks page */
+
+  .thanks-section {
+      color: var(--secundary-color);
+      text-align: center;
+      margin: 110px auto 20px auto;
+  }
+
+  .thanks-title {
+      font-size: 40px;
+      margin: 30px auto 20px auto;
+  }
+
+  .thanks-text {
+      margin: 0;
+      font-size: 18px;
+    }
+
+  .thanks-btn {
+      font: inherit;
+      font-weight: bold;
+      background: linear-gradient(180deg,#cd5c5c, #c03f3f);
+      color: var(--bc-color);
+      text-align: center;
+      margin: 20px;
+      width: 20%;
+      padding: 15px;
+      border: none;
+      border-radius: 10px;
+      outline: none;
+      cursor: pointer;
+      transition: .4s;
+
+  }
+  .thanks-btn:hover {
+      filter: brightness(60%);
+    }
+
+  .thanks-icon {
+    animation: flash 3s infinite cubic-bezier(.8,2,1,1);  
+  }
+  @keyframes flash {
+    50% {
+      opacity: 50%;
+    }
   }
