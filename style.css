@@ -384,6 +384,10 @@ p.middle-text {
     color: var(--main-color);
 }
 
+.project1-block {
+    height: 400px;
+}
+
 .project1-image {
     float: left;
     width: 50%;
@@ -401,6 +405,7 @@ p.middle-text {
 
 .project1-text > h3 {
     font-size: 35px;
+    color: #ffa3a3;
 }
 .project1-text > p {
     font-size: 22px;
@@ -436,10 +441,66 @@ p.middle-text {
     }
 }
 
+.project2-block {
+    margin-top: 80px;
+}
+
+.project2-image {
+    float: left;
+    width: 50%;
+}
+
+.project2-text {
+    float: right;
+    width: 50%;
+    color: var(--secundary-color);
+}
+
+.text-project2 {
+    line-height: 40px;
+}
+
+.project2-text > h3 {
+    font-size: 35px;
+    color: #ffefae;
+}
+.project2-text > p {
+    font-size: 22px;
+}
+
+#project-dangernet {
+    width: 90%;
+    padding-left: 55px;
+}
+
+@media (max-width: 600px) {
+    .project2-block {
+        margin-top: 400px;
+        margin-bottom: 200px;
+    }    
+    .project2-image {
+        float: none;
+        width: auto;
+    }
+    .project2-text {
+        float: none;
+        width: auto;
+        padding: 20px;
+    }
+
+    .project2-text > h3 {
+        text-align: center;
+    }
+
+    #project-dangernet {
+        width: 75%;
+    }
+}
+
 /*contact section */
 
 .contact {
-    margin: auto 100px 90px 400px;
+    margin: auto 100px 90px 450px;
     width: 300px;
 }
 
@@ -460,6 +521,10 @@ form {
     justify-content: center;
     border-radius: 7px;
 
+}
+
+.span-form {
+    color: var(--main-color);
 }
 
 input, textarea {

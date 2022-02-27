@@ -104,25 +104,37 @@
 
     <section class="projects" id="projects">
         <h2 class="projects-title">Projetos</h2>
-        <div class="project1-image">
-            <img src="projects/project-nordician.webp" alt="Projeto: Nordician" id="project-nordician">
+        <div class="project1-block">
+            <div class="project1-image">
+                <img src="projects/project-nordician.webp" alt="Projeto: Nordician" id="project-nordician">
+            </div>
+            <div class="project1-text">
+                <h3>Nordician</h3>
+                <p class="text-project1">"Olá viajante, bem vinda(o) ao site Nordician. Aqui forneço diversos artigos para quem busca por informações sobre a cultura nórdica. Contendo artigos sobre o mundo real, e sobre o mundo místico."</p>
+            </div>
         </div>
-        <div class="project1-text">
-            <h3>Nordician</h3>
-            <p class="text-project1">"Olá viajante, bem vinda(o) ao site Nordician. Aqui forneço diversos artigos para quem busca por informações sobre a cultura nórdica. Contendo artigos sobre o mundo real, e sobre o mundo místico."</p>
+
+        <div class="project2-block">
+            <div class="project2-image">
+                <img src="projects/project-dangernet.webp" alt="Projeto: Danger Net" id="project-dangernet">
+            </div>
+            <div class="project2-text">
+                <h3>Danger Net</h3>
+                <p class="text-project2">"Aqui você irá descobrir os mistérios e as verdades pro trás da grande internet."</p>
+            </div>
         </div>
     </section>
 
     <section class="contact" id="contact">
         <h2 class="contact-title">Contato</h2>
         <form action="https://formsubmit.co/giovanniclopes@gmail.com" method="POST">
-            <label for="name">Seu nome*</label><br>
+            <label for="name">Seu nome<span class="span-form">*</span></label><br>
             <input type="text" name="name" id="name" placeholder="me diga seu nome" required><br>
 
-            <label for="email">Email*</label><br>
+            <label for="email">Email<span class="span-form">*</span></label><br>
             <input type="email" name="email" id="email" placeholder="me diga seu email" required><br>
 
-            <label for="message">Mensagem*</label><br>
+            <label for="message">Mensagem<span class="span-form">*</span></label><br>
 
             <textarea name="message" id="message" cols="30" rows="5" placeholder="Olá! Eu gostaria de falar sobre {assunto}." required></textarea><br>
 
@@ -144,6 +156,7 @@
               document.write('  - Giovanni Lopes - Todos os direitos reservados.');
               document.write('<br/>Última alteração : ');
               document.write(document.lastModified);
+              
             </script>
     </footer>
     
