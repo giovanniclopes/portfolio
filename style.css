@@ -497,6 +497,62 @@ p.middle-text {
     }
 }
 
+.project3-block {
+    margin-top: 80px;
+}
+
+.project3-image {
+    float: left;
+    width: 50%;
+}
+
+.project3-text {
+    float: right;
+    width: 50%;
+    color: var(--secundary-color);
+}
+
+.text-project3 {
+    line-height: 40px;
+}
+
+.project3-text > h3 {
+    font-size: 35px;
+    color: #64d3b5;
+}
+.project3-text > p {
+    font-size: 22px;
+}
+
+#project-calculator {
+    width: 90%;
+    padding-left: 55px;
+}
+
+@media (max-width: 600px) {
+    .project3-block {
+        margin-top: 400px;
+        margin-bottom: 200px;
+    }    
+    .project3-image {
+        float: none;
+        width: auto;
+    }
+    .project3-text {
+        float: none;
+        width: auto;
+        padding: 20px;
+    }
+
+    .project3-text > h3 {
+        text-align: center;
+    }
+
+    #project-calculator {
+        width: 75%;
+    }
+}
+
 /*contact section */
 
 .contact {
