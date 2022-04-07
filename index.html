@@ -140,25 +140,24 @@
                 </div>
             </a>
         </div>
-    </section>
+    <section id="contact">
+        <div class="contact-form">
+            <h2 class="contact-title">Contato</h2>
+            <form action="https://formsubmit.co/giovanniclopes@gmail.com" method="post">
+                <label for="name">Seu nome<span class="span-form">*</span></label>
+                <input type="text" name="name" id="name" class="field" placeholder="me diga seu nome" required>
 
-    <section class="contact" id="contact">
-        <h2 class="contact-title">Contato</h2>
-        <form action="https://formsubmit.co/giovanniclopes@gmail.com" method="POST">
-            <label for="name">Seu nome<span class="span-form">*</span></label><br>
-            <input type="text" name="name" id="name" placeholder="me diga seu nome" required><br>
+                <label for="email">Email<span class="span-form">*</span></label>
+                <input type="email" name="email" id="email" class="field" placeholder="me diga seu email" required>
 
-            <label for="email">Email<span class="span-form">*</span></label><br>
-            <input type="email" name="email" id="email" placeholder="me diga seu email" required><br>
+                <label for="message">Mensagem<span class="span-form">*</span></label>
+                <textarea name="message" id="message" class="field" cols="30" rows="5" placeholder="Olá! Eu gostaria de falar sobre {assunto}." required></textarea>
 
-            <label for="message">Mensagem<span class="span-form">*</span></label><br>
-
-            <textarea name="message" id="message" cols="30" rows="5" placeholder="Olá! Eu gostaria de falar sobre {assunto}." required></textarea><br>
-
-            <button type="submit" value="Enviar" id="contact-btn">Enviar mensagem</button>
-            <input type="hidden" name="_next" value="https://giovanniclopes.github.io/portfolio/thanks.html">
-            <input type="hidden" name="_template" value="table">
-        </form>
+                <button type="submit" value="Enviar" id="contact-btn">Enviar mensagem</button>
+                <input type="hidden" name="_next" value="https://giovanniclopes.github.io/portfolio/thanks.html">
+                <input type="hidden" name="_template" value="table">
+            </form>
+        </div>
     </section>
 
     <footer id="footer">
