@@ -369,6 +369,7 @@ p.middle-text {
 
 .skill1, .skill2, .skill3, .skill4 {
     display: inline-flex;
+    align-items: center;
     width: 300px;
     height: 60px;
     padding: 20px;
