@@ -386,6 +386,7 @@ p.middle-text {
 
 .project1-block {
     height: 400px;
+    padding: 0px 50px;
 }
 
 .project1-image {
@@ -444,15 +445,17 @@ p.middle-text {
 
 .project2-block {
     margin-top: 80px;
+    height: 400px;
+    padding: 0px 50px;
 }
 
 .project2-image {
-    float: left;
+    float: right;
     width: 50%;
 }
 
 .project2-text {
-    float: right;
+    float: left;
     width: 50%;
     color: var(--secundary-color);
 }
@@ -463,9 +466,11 @@ p.middle-text {
 
 .project2-text > h3 {
     font-size: 35px;
+    text-align: right;
     color: #ffefae;
 }
 .project2-text > p {
+    text-align: right;
     font-size: 22px;
 }
 
@@ -500,7 +505,8 @@ p.middle-text {
 }
 
 .project3-block {
-    margin-top: 80px;
+    height: 400px;
+    padding: 0px 50px;
 }
 
 .project3-image {
@@ -566,7 +572,6 @@ p.middle-text {
 /*contact section */
 
 #contact {
-    margin-top: 1000px;
     margin-bottom: 80px;
     padding: 30px;
     display: flex;
