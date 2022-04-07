@@ -375,7 +375,7 @@ p.middle-text {
 
 .projects {
     margin-top: 150px;
-    margin-bottom: 555px;
+    margin-bottom: 50px;
 }
 
 .projects-title {
@@ -561,12 +561,85 @@ p.middle-text {
     }
 }
 
+.project4-block {
+    height: 400px;
+    padding: 0px 50px;
+}
+
+.project4-image {
+    float: right;
+    width: 50%;
+}
+
+.project4-text {
+    float: left;
+    width: 50%;
+    color: var(--secundary-color);
+}
+
+.text-project4 {
+    line-height: 40px;
+}
+
+.project4-text > h3 {
+    font-size: 35px;
+    text-align: right;
+    color: #226975;
+}
+.project4-text > p {
+    font-size: 22px;
+    text-align: right;
+}
+
+#project-roadtek {
+    width: 90%;
+    padding-left: 55px;
+    transition: .4s;
+}
+
+@media (max-width: 600px) {
+    .project4-block {
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }    
+    .project4-image {
+        float: none;
+        width: auto;
+    }
+    .project4-text {
+        float: none;
+        width: auto;
+        padding: 20px;
+    }
+
+    .project4-text > h3 {
+        text-align: center;
+    }
+
+    #project-roadtek {
+        width: 75%;
+    }
+}
+
 #project-nordician:hover, #project-dangernet:hover, #project-calculator:hover, #project-roadtek:hover {
     transform: scaleY(1.1);
 }
 
-.project1-block a, .project2-block a ,.project3-block a, .project4-block {
+.project1-block a, .project2-block a ,.project3-block a, .project4-block a {
     text-decoration: none;
+}
+
+.span-project {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+    font: bold 2em var(--font);
+    color: var(--main-color);
+}
+
+.span-project:after {
+    content: url(warning.png);
 }
 
 /*contact section */
@@ -733,7 +806,7 @@ form label {
   .thanks-btn {
       font: inherit;
       font-weight: bold;
-      background: linear-gradient(180deg,#cd5c5c, #c03f3f);
+      background: linear-gradient(180deg,#cd5c5c, #3f3f);
       color: var(--bc-color);
       text-align: center;
       margin: 20px;
