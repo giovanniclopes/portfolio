@@ -194,6 +194,7 @@ li {
 
 .linkedinIcon:hover path, .githubIcon:hover path, .emailIcon:hover path {
     fill: var(--main-color);
+    transform: rotate(5deg);
 }
 /*end menu*/
 
@@ -262,6 +263,11 @@ p.middle-text {
     outline: 7px outset #cd5c5c;
     padding: 7px;
     border-radius: 50%;
+    transition: .4s;
+}
+
+.profile-image:hover {
+    transform: rotate(5deg);
 }
 
 @media (max-width: 600px) {
