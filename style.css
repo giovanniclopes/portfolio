@@ -18,6 +18,11 @@ html, body {
     font-family: var(--font);
 }
 
+::selection {
+    background: var(--main-color);
+    color: #131313;
+}
+
 /*menu*/
 
 .menu-item {
@@ -352,6 +357,7 @@ p.middle-text {
 
 .skill-text {
     font: normal 22px var(--font);
+    cursor: default;
 }
 
 
@@ -664,7 +670,7 @@ p.middle-text {
 
 .contact-title {
     text-align: center;
-    font-size: 45px;
+    font-size: 3em;
     color: var(--main-color);
 }
 
@@ -674,18 +680,20 @@ form {
     color: var(--secundary-color);
 }
 
-form label {
-    font: normal 1.2em var(--font);
-}
+label:nth-child(3), label:nth-child(5), label:nth-child(1) {
+    font-size: 1.4em;
+    color: rgb(255, 255, 255);
+   }
+
 
 .field {
-    margin: 5px 0 15px 0;
-    background: #343434;
+    margin: 5px 0 20px 0;
+    background: linear-gradient(120deg, #343434, #272727);
     border: none;
     border-radius: 5px;
     padding: 10px 15px;
     color: var(--secundary-color);
-    font: 500 1em 'Poppins', sans-serif;
+    font: 500 1.3em 'Poppins', sans-serif;
     box-shadow: 15px 16px 56px -13px rgba(0,0,0,0.49);
     -webkit-box-shadow: 15px 16px 56px -13px rgba(0,0,0,0.49);
     -moz-box-shadow: 15px 16px 56px -13px rgba(0,0,0,0.49);
@@ -700,14 +708,14 @@ form label {
 }
 
 ::placeholder {
-    font: normal 1.2em 'Poppins', sans-serif;
+    font: normal .9em 'Poppins', sans-serif;
 }
 
 #contact-btn {
     margin-top: 15px;
-    padding: 15px;
+    padding: 20px 15px;
     border: none;
-    border-radius: 3px;
+    border-radius: 4px;
     background: var(--main-color);
     font: bold 1.1em 'Poppins', sans-serif;
     color: var(--bc-color);
