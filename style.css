@@ -200,22 +200,22 @@ li {
 
 /* first section */
 
-.apresentation {
+.presentation {
     display: block;
 }
 
-.apresentation-text-left {
+.presentation-text-left {
     float: left;
     padding: 50px 30px 30px 150px;
 }
 
-.apresentation-text-left > h1, p {
+.presentation-text-left > h1, p {
     color: var(--secundary-color);
     font: bold 75px 'Poppins', sans-serif;
     line-height: 150px;
 }
     
-      .apresentation-title, .middle-text, .little-text {
+      .presentation-title, .middle-text, .little-text {
         width: 500px;
         overflow: hidden;
         animation: typing 3s steps(55), blink .6s step-end infinite alternate;
@@ -234,7 +234,7 @@ li {
       }
       
 
-    .apresentation-text-left p {
+    .presentation-text-left p {
         white-space: nowrap;
         color: var(--secundary-color);
         font: bold 70px 'Poppins', sans-serif;
@@ -252,7 +252,7 @@ p.middle-text {
     margin-top: -100px;
 }
 
-.apresentation-image-right {
+.presentation-image-right {
     margin: 80px 10px 20px 20px;
     float: right;
     width: 40%;
@@ -271,7 +271,7 @@ p.middle-text {
 }
 
 @media (max-width: 600px) {
-    .apresentation-text-left {
+    .presentation-text-left {
         font-size: 22px;
         width: auto;
         float: none;
@@ -280,25 +280,25 @@ p.middle-text {
         bottom: 140px;
         right: 20px;
     }
-    .apresentation-title, .middle-text, .little-text {
+    .presentation-title, .middle-text, .little-text {
         width: auto;
         animation: none;
         border-right: none;
         overflow: visible;
     }
-    .apresentation-text-left > h1 {
+    .presentation-text-left > h1 {
         color: var(--secundary-color);
         font: bold 45px 'Poppins', sans-serif;
         line-height: 20px;
     }
-    .apresentation-text-left p {
+    .presentation-text-left p {
         color: var(--main-color);
         font: bold 25px 'Poppins', sans-serif;
         line-height: 1px;
         margin-top: -10px;
         width: 300px;
     }
-    .apresentation-image-right {
+    .presentation-image-right {
         margin: 0 70px;
         float: none;
         width: 80%;
@@ -708,6 +708,15 @@ label:nth-child(3), label:nth-child(5), label:nth-child(1) {
 
 .field:focus {
     outline: 2px solid var(--main-color);
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #343434 inset;
+}
+
+/* Cor do texto do autocomplete */
+input:-webkit-autofill {
+    -webkit-text-fill-color: var(--secundary-color);
 }
 
 .span-form {
