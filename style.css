@@ -10,7 +10,7 @@
 }
 
 html, body {
-    background-image: url('Background.png');
+    background-image: url('images/background.png');
     background-attachment: fixed;
     background-position: right;
     background-size: cover;
@@ -652,7 +652,7 @@ p.middle-text {
 }
 
 .span-project:after {
-    content: url(warning.png);
+    content: url(icons/warning.png);
 }
 
 /*contact section */
