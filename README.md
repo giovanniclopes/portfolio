@@ -25,9 +25,9 @@ Já tive leve contato com
 E tenho interesse em
 
 ![Python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![React JS](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Node JS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
-![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white).
+![Flutter](https://img.shields.io/badge/Flutter-black?style=for-the-badge&logo=flutter&logoColor=45D1FD).
 
 :outbox_tray: Metas de 2022: Criar um grande projeto e arrumar um emprego na área de tecnologia.
 
