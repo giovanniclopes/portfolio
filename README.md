@@ -29,7 +29,7 @@ E tenho interesse em
 ![Node JS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 ![Flutter](https://img.shields.io/badge/Flutter-black?style=for-the-badge&logo=flutter&logoColor=45D1FD).
 
-:outbox_tray: Metas de 2022: Criar um grande projeto e arrumar um emprego na área de tecnologia.
+:outbox_tray: Metas de 2022: Desenvolver minhas habilidades, e aprender novas tecnologias.
 
  
 
