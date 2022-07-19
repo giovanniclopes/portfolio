@@ -396,13 +396,107 @@ p.middle-text {
     color: var(--main-color);
 }
 
+/* projects block */
+
+.project5-block {
+    margin-top: 80px;
+    height: 400px;
+    padding: 0px 50px;
+}
+
+.project5-image {
+    float: left;
+    width: 50%;
+}
+
+.project5-text {
+    float: right;
+    width: 50%;
+    color: var(--secundary-color);
+}
+
+.text-project5 {
+    line-height: 40px;
+    float: left;
+}
+
+.project5-text > h3 {
+    font-size: 35px;
+    text-align: right;
+    color: #ffefae;
+}
+.project5-text > p {
+    text-align: right;
+    font-size: 22px;
+}
+
+#project-eventplatform {
+    width: 90%;
+    padding-left: 55px;
+    transition: .4s;
+}
+
+@media (max-width: 600px) {
+    .project5-block {
+        margin-top: 400px;
+        margin-bottom: 200px;
+    }    
+    .project5-image {
+        float: none;
+        width: auto;
+    }
+    .project5-text {
+        float: none;
+        width: auto;
+        padding: 20px;
+    }
+
+    .project5-text > h3 {
+        text-align: center;
+    }
+
+    #project-eventplatform {
+        width: 75%;
+    }
+}
+
+.project5-block {
+    height: 400px;
+    padding: 0px 50px;
+}
+
+.project5-image {
+    float: right;
+    width: 50%;
+}
+
+.project5-text {
+    float: right;
+    width: 50%;
+    color: var(--secundary-color);
+}
+
+.text-project5 {
+    line-height: 40px;
+    float: right;
+}
+
+.project5-text > h3 {
+    font-size: 35px;
+    color: #64d3b5;
+    float: right;
+}
+.project5-text > p {
+    font-size: 22px;
+}
+
 .project1-block {
     height: 400px;
     padding: 0px 50px;
 }
 
 .project1-image {
-    float: left;
+    float: right;
     width: 50%;
 }
 
@@ -414,11 +508,13 @@ p.middle-text {
 
 .text-project1 {
     line-height: 40px;
+    text-align: right;
 }
 
 .project1-text > h3 {
     font-size: 35px;
     color: #ffa3a3;
+    text-align: right;
 }
 .project1-text > p {
     font-size: 22px;
@@ -462,7 +558,7 @@ p.middle-text {
 }
 
 .project2-image {
-    float: right;
+    float: left;
     width: 50%;
 }
 
@@ -474,11 +570,12 @@ p.middle-text {
 
 .text-project2 {
     line-height: 40px;
+    float: left;
 }
 
 .project2-text > h3 {
     font-size: 35px;
-    text-align: right;
+    text-align: left;
     color: #ffefae;
 }
 .project2-text > p {
@@ -522,7 +619,7 @@ p.middle-text {
 }
 
 .project3-image {
-    float: left;
+    float: right;
     width: 50%;
 }
 
@@ -534,11 +631,13 @@ p.middle-text {
 
 .text-project3 {
     line-height: 40px;
+    float: right;
 }
 
 .project3-text > h3 {
     font-size: 35px;
     color: #64d3b5;
+    float: right;
 }
 .project3-text > p {
     font-size: 22px;
@@ -555,17 +654,17 @@ p.middle-text {
         margin-bottom: 50px;
     }    
     .project3-image {
-        float: none;
+        float: right;
         width: auto;
     }
     .project3-text {
-        float: none;
+        float: right;
         width: auto;
         padding: 20px;
     }
 
     .project3-text > h3 {
-        text-align: center;
+        text-align: right;
     }
 
     #project-calculator {
@@ -603,41 +702,49 @@ p.middle-text {
     text-align: right;
 }
 
-#project-roadtek {
+#project-eventplatform {
     width: 90%;
     padding-left: 55px;
     transition: .4s;
 }
 
 @media (max-width: 600px) {
-    .project4-block {
+    .project5-block {
         margin-top: 150px;
         margin-bottom: 50px;
     }    
-    .project4-image {
+    .project5-image {
         float: none;
         width: auto;
     }
-    .project4-text {
+    .project5-text {
         float: none;
         width: auto;
         padding: 20px;
     }
 
-    .project4-text > h3 {
+    .project5-text > h3 {
         text-align: center;
     }
 
-    #project-roadtek {
+    #project-eventplatform {
         width: 75%;
     }
 }
 
-#project-nordician:hover, #project-dangernet:hover, #project-calculator:hover, #project-roadtek:hover {
+#project-nordician:hover, 
+#project-dangernet:hover, 
+#project-calculator:hover, 
+#project-roadtek:hover,
+#project-eventplatform:hover {
     transform: scaleY(1.1);
 }
 
-.project1-block a, .project2-block a ,.project3-block a, .project4-block a {
+.project1-block a, 
+.project2-block a ,
+.project3-block a, 
+.project4-block a,
+.project5-block a {
     text-decoration: none;
 }
 
