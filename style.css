@@ -14,6 +14,7 @@ html, body {
     background-size: cover;
     margin: 0;
     font-family: var(--font);
+    scroll-behavior: smooth;
 }
 
 ::selection {
@@ -387,7 +388,7 @@ p.middle-text {
 
 .projects {
     margin-top: 150px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .projects-title {
@@ -416,8 +417,8 @@ p.middle-text {
 }
 
 .text-project5 {
-    line-height: 40px;
     float: left;
+    line-height: 40px;
 }
 
 .project5-text > h3 {
@@ -426,13 +427,13 @@ p.middle-text {
     color: #ffefae;
 }
 .project5-text > p {
-    text-align: right;
+    text-align: left;
     font-size: 22px;
 }
 
 #project-eventplatform {
     width: 90%;
-    padding-left: 55px;
+    padding-right: 55px;
     transition: .4s;
 }
 
@@ -466,28 +467,29 @@ p.middle-text {
 }
 
 .project5-image {
-    float: right;
+    float: left;
     width: 50%;
 }
 
 .project5-text {
-    float: right;
+    float: left;
     width: 50%;
     color: var(--secundary-color);
 }
 
 .text-project5 {
+    float: left;
     line-height: 40px;
-    float: right;
 }
 
 .project5-text > h3 {
     font-size: 35px;
     color: #64d3b5;
-    float: right;
+    float: left;
 }
 .project5-text > p {
     font-size: 22px;
+    float: left;
 }
 
 .project1-block {
@@ -579,13 +581,13 @@ p.middle-text {
     color: #ffefae;
 }
 .project2-text > p {
-    text-align: right;
+    text-align: left;
     font-size: 22px;
 }
 
 #project-dangernet {
     width: 90%;
-    padding-left: 55px;
+    padding-right: 55px;
     transition: .4s;
 }
 
@@ -641,6 +643,7 @@ p.middle-text {
 }
 .project3-text > p {
     font-size: 22px;
+    float: right;
 }
 
 #project-calculator {
@@ -700,36 +703,6 @@ p.middle-text {
 .project4-text > p {
     font-size: 22px;
     text-align: right;
-}
-
-#project-eventplatform {
-    width: 90%;
-    padding-left: 55px;
-    transition: .4s;
-}
-
-@media (max-width: 600px) {
-    .project5-block {
-        margin-top: 150px;
-        margin-bottom: 50px;
-    }    
-    .project5-image {
-        float: none;
-        width: auto;
-    }
-    .project5-text {
-        float: none;
-        width: auto;
-        padding: 20px;
-    }
-
-    .project5-text > h3 {
-        text-align: center;
-    }
-
-    #project-eventplatform {
-        width: 75%;
-    }
 }
 
 #project-nordician:hover, 

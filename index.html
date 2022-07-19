@@ -202,6 +202,25 @@
     </footer>
     
     <script src="script.js"></script>
+
+    <!-- wheel scroll smooth -->
+    <script>
+        $(window).on('mousewheel DOMMouseScroll', function(e) {
+            var dir,
+                amt = 100;
+  
+        e.preventDefault();
+        if(e.type === 'mousewheel') {
+            dir = e.originalEvent.wheelDelta > 0 ? '-=' : '+=';
+        }
+        else {
+            dir = e.originalEvent.detail < 0 ? '-=' : '+=';
+        }      
+            
+        $('html, body').stop().animate({
+            scrollTop: dir + amt
+        },500, 'linear');
+        })
     </script>
 </body>
 </html>
