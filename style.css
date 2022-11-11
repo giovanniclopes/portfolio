@@ -24,6 +24,23 @@ html, body {
 
 /*menu*/
 
+
+#header {
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    padding: 15px 50px 15px 100px;
+    margin: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bc-color);
+}
+
 .menu-item {
     color: #fffcf8;
     text-decoration: none;
@@ -32,17 +49,6 @@ html, body {
 
 #logo-image {
     width: 50%;
-}
-
-#header {
-    z-index: 1000;
-    box-sizing: border-box;
-    height: 100px;
-    padding: 15px 50px 15px 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: var(--bc-color);
 }
 
 #menu {

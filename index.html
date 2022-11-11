@@ -22,6 +22,7 @@
 </head>
 <body>
     <!--header menu-->
+    
     <header id="header">
         
         <nav id="nav">
@@ -65,7 +66,7 @@
         <div class="presentation-text-left">
             <h1 class="presentation-title">Olá!</h1>
             <p class="middle-text" style="color: #d9d9d9;">Sou Giovanni</p>
-            <p class="little-text">Desenvolvedor Júnior</p>
+            <p class="little-text">Desenvolvedor Web</p>
         </div>
         <div class="presentation-image-right">
             <img src="images/profile-image2.webp" draggable="false" class="profile-image" alt="Giovanni Profile Image">
@@ -78,9 +79,9 @@
         <h2 class="about-me-title">Sobre mim</h2>
         <p class="about-me-text">
             Opa, bem vindo ao meu portfólio!
-                Prazer, meu nome é Giovanni Lopes e tenho 17 anos.
+                Prazer, meu nome é Giovanni Lopes e tenho <span id="myAge">17</span> anos.
                 <br> 
-                Entusiasta da tecnologia desde criança, sempre busquei entender como as coisas eram feitas e como funcionavam. Em 2021 com 15 anos, comecei a estudar programação focada em Desenvolvimento Web. Neste tempo já aprendi HTML, CSS, JavaScript e WordPress. Pretendo ainda conhecer ReactJS e React Native.
+                Entusiasta da tecnologia desde criança, sempre busquei entender como as coisas eram feitas e como funcionavam. Em 2021, comecei a estudar programação focada em Desenvolvimento Web. Neste tempo já aprendi HTML, CSS, JavaScript e WordPress. Pretendo ainda conhecer ReactJS e React Native.
                 Também já tive contato com Python, PHP e MySQL.
         </p>
     </section>
@@ -198,6 +199,10 @@
               document.write('<br/>Última alteração : ');
               document.write(document.lastModified);
               
+              const ageText = document.getElementById('myAge');
+              currentYear = new Date().getFullYear();
+              myAge = currentYear - 2005;
+              ageText.innerHTML = myAge;
             </script>
     </footer>
     
