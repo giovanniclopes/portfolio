@@ -30,7 +30,6 @@ html, body {
     position: fixed;
     display: flex;
     top: 0;
-    width: 100%;
     height: 100px;
     padding: 15px 50px 15px 100px;
     margin: 20px;
@@ -54,7 +53,7 @@ html, body {
 #menu {
     display: flex;
     list-style: none;
-    gap: 10px;
+    gap: 5px;
 }
 
 #menu .home-menu-item {
@@ -102,6 +101,8 @@ html, body {
 
 @media (max-width: 600px) {
     #header {
+      width: 90%;
+      height: 4rem;
       padding: 0 10px 0 10px;
       background: var(--bc-color);
     }
@@ -206,66 +207,37 @@ li {
 /* first section */
 
 .presentation {
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    margin: 13rem 0 0 12rem;
+    gap: 5rem;
 }
 
-.presentation-text-left {
-    float: left;
-    padding: 50px 30px 30px 150px;
+.presentation-text-left, .presentation-image-right {
+    width: max-content;
+    align-items: left;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
 }
 
-.presentation-text-left > h1, p {
+.presentation-title,
+.middle-text,
+.little-text {
     color: var(--secundary-color);
-    font: bold 75px 'Poppins', sans-serif;
-    line-height: 150px;
-}
-    
-      .presentation-title, .middle-text, .little-text {
-        width: 500px;
-        overflow: hidden;
-        animation: typing 3s steps(55), blink .6s step-end infinite alternate;
-        border-right: 3px solid var(--secundary-color);
-    }
-    
-      @keyframes typing {
-          from {
-              width: 0;
-          }
-      }
-      @keyframes blink {
-          50% {
-              border-color: transparent;
-          }
-      }
-      
-
-    .presentation-text-left p {
-        white-space: nowrap;
-        color: var(--secundary-color);
-        font: bold 70px 'Poppins', sans-serif;
-        margin-top: -70px;
-    }
-
-p.little-text {
-    font: bold 30px 'Poppins' , sans-serif;
-    background: -webkit-linear-gradient(180deg,#cd5c5c, #c73939);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font: bold 4.2rem var(--font);
+    line-height: 20px;
 }
 
-p.middle-text {
-    margin-top: -100px;
-}
-
-.presentation-image-right {
-    margin: 80px 10px 20px 20px;
-    float: right;
-    width: 40%;
+.little-text {
+    color: var(--main-color);
+    font-size: 1.8rem;
 }
 
 .profile-image {
-    width: 65%;
+    width: 100%;
     outline: 7px outset #cd5c5c;
     padding: 7px;
     border-radius: 50%;
@@ -277,43 +249,26 @@ p.middle-text {
 }
 
 @media (max-width: 600px) {
-    .presentation-text-left {
-        font-size: 22px;
-        width: auto;
-        float: none;
-        padding: auto;
-        position: absolute;
-        bottom: 140px;
-        right: 20px;
+    .presentation {
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+        margin-top: 10rem;
+        
     }
-    .presentation-title, .middle-text, .little-text {
-        width: auto;
-        animation: none;
-        border-right: none;
-        overflow: visible;
-    }
-    .presentation-text-left > h1 {
+    .presentation-title,
+    .middle-text,
+    .little-text {
         color: var(--secundary-color);
-        font: bold 45px 'Poppins', sans-serif;
-        line-height: 20px;
+        font: bold 2.6rem var(--font);
+        line-height: 10px;
     }
-    .presentation-text-left p {
+    .little-text {
         color: var(--main-color);
-        font: bold 25px 'Poppins', sans-serif;
-        line-height: 1px;
-        margin-top: -10px;
-        width: 300px;
-    }
-    .presentation-image-right {
-        margin: 0 70px;
-        float: none;
-        width: 80%;
-        position: absolute;
-        top: 160px;
-    }
-    p.middle-text {
-        font-size: 40px;
-        line-height: 30px;
+        font-size: 1.5rem;
     }
 }
 
@@ -321,8 +276,8 @@ p.middle-text {
 
 .about-me {
     color: var(--secundary-color);
-    padding: 70px;
-    margin: 450px 150px auto 150px;
+    padding: 50px;
+    margin-top: 8rem;
 }
 
 .about-me-title {
@@ -337,7 +292,7 @@ p.middle-text {
 
 @media (max-width: 600px) {
     .about-me {
-        margin: 600px auto 5px auto;
+        margin-top: 2rem;
     }
 }
 
