@@ -22,6 +22,10 @@ html, body {
     color: #131313;
 }
 
+.animate__animated.animate__fadeIn {
+    --animate-duration: 2s;
+}
+
 /*menu*/
 
 
