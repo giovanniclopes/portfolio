@@ -1,6 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
-import Logo2 from "../assets/logo2.png";
 import { List, X } from "phosphor-react";
 
 export function Header() {
@@ -35,14 +34,14 @@ export function Header() {
             : "z-50 fixed top-0 w-full flex items-center justify-between h-24 py-3 px-8 mx-auto backdrop-blur-0 bg-gray-600/20 text-white border-b-2 border-transparent transition-all md:items-center mbl:px-4"
         }
       >
-        <Link to="/">
+        {/* <Link to="/">
           <img
             className="mbl:w-8"
             src={Logo2}
             width={40}
             alt="Nordician Logo"
           />
-        </Link>
+        </Link> */}
         <div
           className={
             togglerNav

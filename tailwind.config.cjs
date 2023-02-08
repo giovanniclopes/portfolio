@@ -2,7 +2,23 @@
 module.exports = {
   content: ["./src/**/*.tsx"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: 'Poppins, sans-serif',
+      },
+      backgroundImage: {
+        cityBg: '',
+      },
+      colors: {
+        gray: {
+          500: '#0e0e0e',
+          600: '#131313',
+        },
+        red: {
+          500: '#cd5c5c',
+        }
+      }
+    },
   },
   plugins: [],
 };
