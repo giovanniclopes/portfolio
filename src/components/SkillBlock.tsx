@@ -14,7 +14,7 @@ const boxVariant = {
   hidden: { opacity: 0, scale: 0 },
 };
 
-export default function SkillBlock(props: SkillBox, num: any) {
+export default function SkillBlock(props: SkillBox) {
   const control = useAnimation();
   const [ref, inView] = useInView();
 

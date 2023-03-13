@@ -6,7 +6,7 @@ export default function About() {
   var myCurrentAge = Math.abs(currentYear - 2005);
 
   return (
-    <section className="px-10 my-24">
+    <section id="about" className="about px-10 my-24">
       <div className="flex flex-col items-center justify-center text-center gap-4">
         <div className="flex items-center justify-center m-5">
           <h2 className="text-5xl text-red-500 font-bold">Sobre mim</h2>

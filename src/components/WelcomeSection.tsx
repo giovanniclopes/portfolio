@@ -1,5 +1,4 @@
 import { CaretDown } from "phosphor-react";
-import { Box } from "./Box";
 
 export default function WelcomeSection() {
   return (
@@ -27,9 +26,6 @@ export default function WelcomeSection() {
             color="#cd5c5c"
             weight="bold"
           />
-          <Box num={1} />
-          <Box num={2} />
-          <Box num={3} />
         </div>
       </div>
     </section>

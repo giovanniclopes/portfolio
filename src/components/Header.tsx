@@ -50,7 +50,7 @@ export function Header() {
           <NavLink
             className="transition-all hover:text-gray-50"
             onClick={clickHandler}
-            to="#about-me"
+            to="#about"
           >
             Sobre mim
           </NavLink>
