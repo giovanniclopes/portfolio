@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 import {
   List,
@@ -54,13 +54,13 @@ export function Header() {
           >
             Sobre mim
           </NavLink>
-          <NavLink
+          <Link
             className="transition-all hover:text-gray-50"
             onClick={clickHandler}
             to="#skills"
           >
             Skills
-          </NavLink>
+          </Link>
           <NavLink
             className="transition-all hover:text-gray-50"
             onClick={clickHandler}
