@@ -17,3 +17,6 @@ export default function Home() {
     </div>
   );
 }
+
+// add animation to the titles of each section
+// use the same animation as the skill blocks
