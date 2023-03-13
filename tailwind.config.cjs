@@ -3,21 +3,25 @@ module.exports = {
   content: ["./src/**/*.tsx"],
   theme: {
     extend: {
+      screens: {
+        mbl: { max: "630px" }, // mbl == mobile
+        // => @media (max-width: 630px) { ... }
+      },
       fontFamily: {
-        sans: 'Poppins, sans-serif',
+        sans: "Poppins, sans-serif",
       },
       backgroundImage: {
-        cityBg: 'url(./src/assets/background.png)',
+        cityBg: "url(./src/assets/background.png)",
       },
       colors: {
         gray: {
-          500: '#0e0e0e',
-          600: '#131313',
+          500: "#0e0e0e",
+          600: "#131313",
         },
         red: {
-          500: '#cd5c5c',
-        }
-      }
+          500: "#cd5c5c",
+        },
+      },
     },
   },
   plugins: [],
