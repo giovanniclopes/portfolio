@@ -77,13 +77,16 @@ export function Header() {
           </NavLink>
         </div>
         <div className="flex gap-5">
-          <NavLink to="https://linkedin.com/in/giovanni-lopes21">
+          <NavLink
+            to="https://linkedin.com/in/giovanni-lopes21"
+            target="_blank"
+          >
             <LinkedinLogo width={28} height={28} weight="fill" />
           </NavLink>
-          <NavLink to="https://github.com/giovanniclopes">
+          <NavLink to="https://github.com/giovanniclopes" target="_blank">
             <GithubLogo width={28} height={28} weight="fill" />
           </NavLink>
-          <NavLink to="emailto:giovanniclopes@gmail.com">
+          <NavLink to="emailto:giovanniclopes@gmail.com" target="_blank">
             <EnvelopeSimple width={28} height={28} weight="fill" />
           </NavLink>
         </div>

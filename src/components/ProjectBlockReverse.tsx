@@ -11,7 +11,7 @@ interface ProjectBlockReverse {
 export default function ProjectBlockReverse(props: ProjectBlockReverse) {
   return (
     <div>
-      <Link to={props.linkURL}>
+      <Link to={props.linkURL} target="_blank">
         <div className="grid grid-cols-2 transition-all group">
           <div className="flex flex-col gap-10 items-start justify-center px-5">
             <div className="flex flex-col gap-3">
@@ -25,7 +25,11 @@ export default function ProjectBlockReverse(props: ProjectBlockReverse) {
             </div>
           </div>
           <div>
-            <img className="rounded-md transition-all group-hover:opacity-75" src={props.imgURL} alt={props.imgALT} />
+            <img
+              className="rounded-md transition-all group-hover:opacity-75"
+              src={props.imgURL}
+              alt={props.imgALT}
+            />
           </div>
         </div>
       </Link>

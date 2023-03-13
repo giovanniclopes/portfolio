@@ -11,7 +11,7 @@ interface ProjectBlock {
 export default function ProjectBlock(props: ProjectBlock) {
   return (
     <div>
-      <Link to={props.linkURL}>
+      <Link to={props.linkURL} target="_blank">
         <div className="grid grid-cols-2 transition-all group">
           <div>
             <img

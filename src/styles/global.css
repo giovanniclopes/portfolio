@@ -6,3 +6,22 @@ body {
   @apply font-sans bg-cityBg bg-cover bg-fixed bg-right text-gray-50;
   -webkit-font-smoothing: antialiased;
 }
+
+::-webkit-scrollbar {
+  width: 14px;
+  background: #000;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 30px;
+  background: rgb(37, 37, 37);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(105, 105, 105);
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #cd5c5c;
+}
