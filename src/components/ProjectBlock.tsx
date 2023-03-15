@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 interface ProjectBlock {
   linkURL: string;
@@ -8,11 +11,33 @@ interface ProjectBlock {
   description: string;
 }
 
+const boxVariant = {
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+  hidden: { opacity: 0, scale: 0 },
+};
+
 export default function ProjectBlock(props: ProjectBlock) {
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
+
   return (
     <div>
       <Link to={props.linkURL} target="_blank">
-        <div className="grid grid-cols-2 transition-all group">
+        <motion.div
+          ref={ref}
+          variants={boxVariant}
+          initial="hidden"
+          animate={control}
+          className="grid grid-cols-2 transition-all group"
+        >
           <div>
             <img
               className="rounded-md transition-all group-hover:opacity-75"
@@ -31,7 +56,7 @@ export default function ProjectBlock(props: ProjectBlock) {
               </button>
             </div>
           </div>
-        </div>
+        </motion.div>
       </Link>
     </div>
   );

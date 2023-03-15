@@ -2,14 +2,15 @@ import CssIcon from "../assets/icons/CssIcon";
 import HtmlIcon from "../assets/icons/htmlIcon";
 import JsIcon from "../assets/icons/JsIcon";
 import WpIcon from "../assets/icons/wpIcon";
+import SectionTitles from "./sectionTitles";
 import SkillBox from "./SkillBlock";
 
 
 export default function Skills() {
   return (
     <section id="skills" className="skills flex flex-col items-center justify-center gap-5 mt-8">
-      <div>
-        <h2 className="text-5xl text-red-500 font-bold">Skills</h2>
+      <div className="my-5 mb-12">
+        <SectionTitles title="Skills" />
       </div>
       <div className="flex flex-row gap-2">
         <SkillBox title={"HTML"} icon={<HtmlIcon />} />

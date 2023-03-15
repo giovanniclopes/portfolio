@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 interface ProjectBlockReverse {
   linkURL: string;
@@ -8,11 +11,32 @@ interface ProjectBlockReverse {
   description: string;
 }
 
+const boxVariant = {
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+  hidden: { opacity: 0, scale: 0 },
+};
+
 export default function ProjectBlockReverse(props: ProjectBlockReverse) {
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
   return (
     <div>
       <Link to={props.linkURL} target="_blank">
-        <div className="grid grid-cols-2 transition-all group">
+        <motion.div
+          ref={ref}
+          variants={boxVariant}
+          initial="hidden"
+          animate={control}
+          className="grid grid-cols-2 transition-all group"
+        >
           <div className="flex flex-col gap-10 items-start justify-center px-5">
             <div className="flex flex-col gap-3">
               <h3 className="text-3xl font-bold">{props.title}</h3>
@@ -31,7 +55,7 @@ export default function ProjectBlockReverse(props: ProjectBlockReverse) {
               alt={props.imgALT}
             />
           </div>
-        </div>
+        </motion.div>
       </Link>
     </div>
   );

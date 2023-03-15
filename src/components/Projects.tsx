@@ -4,12 +4,13 @@ import Nordician from "../assets/projects/project-nordician.webp";
 import Calculator from "../assets/projects/project-calculator.webp";
 import ProjectBlock from "./ProjectBlock";
 import ProjectBlockReverse from "./ProjectBlockReverse";
+import SectionTitles from "./sectionTitles";
 
 export default function Projects() {
   return (
     <section id="projects" className="projects m-12 mt-32">
-      <div className="flex items-center justify-center mb-10">
-        <h2 className="text-5xl text-red-500 font-bold">Projects</h2>
+      <div className="flex items-center justify-center my-5 mb-12">
+        <SectionTitles title="Projects" />
       </div>
       <div className="flex flex-col gap-32">
         <ProjectBlock
