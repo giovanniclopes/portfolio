@@ -1,8 +1,7 @@
-import SectionTitles from "./sectionTitles";
-import { Link } from "react-router-dom";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import SectionTitles from "./SectionTitles";
 
 const boxVariant = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },

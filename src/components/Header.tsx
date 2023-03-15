@@ -1,12 +1,13 @@
 import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 import {
+  EnvelopeSimple,
+  GithubLogo,
+  LinkedinLogo,
   List,
   X,
-  LinkedinLogo,
-  GithubLogo,
-  EnvelopeSimple,
 } from "phosphor-react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export function Header() {
   const [togglerNav, setTogglerNav] = useState(false);
@@ -36,7 +37,7 @@ export function Header() {
       <nav
         className={
           fix
-            ? "z-50 flex items-center justify-between fixed top-0 w-full h-max py-7 px-8 mx-auto bg-gray-500 text-white text-sm font-semibold transition-all md:items-center mbl:px-4"
+            ? "z-50 flex items-center justify-between fixed top-0 w-full h-20 py-7 px-8 mx-auto bg-gray-500 text-white text-sm font-semibold transition-all md:items-center mbl:px-4"
             : "z-50 flex items-center justify-between fixed top-0 w-full h-24 py-3 px-10 mx-auto backdrop-blur-0 bg-gray-600/20 text-sm font-medium text-white/50 transition-all md:items-center mbl:px-4"
         }
       >
@@ -47,34 +48,34 @@ export function Header() {
               : "hidden gap-4 md:flex md:items-center"
           }
         >
-          <NavLink
-            className="transition-all hover:text-gray-50"
+          <AnchorLink
+            className="transition-all hover:text-white"
             onClick={clickHandler}
-            to="#about"
+            href="#about"
           >
             Sobre mim
-          </NavLink>
-          <Link
-            className="transition-all hover:text-gray-50"
+          </AnchorLink>
+          <AnchorLink
+            className="transition-all hover:text-white"
             onClick={clickHandler}
-            to="#skills"
+            href="#skills"
           >
             Skills
-          </Link>
-          <NavLink
-            className="transition-all hover:text-gray-50"
+          </AnchorLink>
+          <AnchorLink
+            className="transition-all hover:text-white"
             onClick={clickHandler}
-            to="#projects"
+            href="#projects"
           >
             Projetos
-          </NavLink>
-          <NavLink
-            className="transition-all hover:text-gray-50"
+          </AnchorLink>
+          <AnchorLink
+            className="transition-all hover:text-white"
             onClick={clickHandler}
-            to="#contact"
+            href="#contact"
           >
             Contato
-          </NavLink>
+          </AnchorLink>
         </div>
         <div className="flex gap-5">
           <NavLink
@@ -95,7 +96,7 @@ export function Header() {
           onClick={clickHandler}
         >
           {togglerNav ? (
-            <X width={28} height={28} />
+            <X width={32} height={28} />
           ) : (
             <List width={28} height={28} />
           )}

@@ -1,10 +1,9 @@
 import DangerNet from "../assets/projects/project-dangernet.webp";
 import EventPlatform from "../assets/projects/project-eventplatform.webp";
-import Nordician from "../assets/projects/project-nordician.webp";
 import Calculator from "../assets/projects/project-calculator.webp";
 import ProjectBlock from "./ProjectBlock";
 import ProjectBlockReverse from "./ProjectBlockReverse";
-import SectionTitles from "./sectionTitles";
+import SectionTitles from "./SectionTitles";
 
 export default function Projects() {
   return (

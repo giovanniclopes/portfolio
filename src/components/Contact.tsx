@@ -1,4 +1,4 @@
-import SectionTitles from "./sectionTitles";
+import SectionTitles from "./SectionTitles";
 
 export default function Contact() {
   return (

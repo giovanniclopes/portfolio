@@ -35,7 +35,7 @@ export default function ProjectBlockReverse(props: ProjectBlockReverse) {
           variants={boxVariant}
           initial="hidden"
           animate={control}
-          className="grid grid-cols-2 transition-all group"
+          className="grid grid-cols-2 transition-all group mbl:flex mbl:flex-col-reverse mbl:gap-8"
         >
           <div className="flex flex-col gap-10 items-start justify-center px-5">
             <div className="flex flex-col gap-3">

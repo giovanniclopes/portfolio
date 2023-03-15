@@ -36,7 +36,7 @@ export default function ProjectBlock(props: ProjectBlock) {
           variants={boxVariant}
           initial="hidden"
           animate={control}
-          className="grid grid-cols-2 transition-all group"
+          className="grid grid-cols-2 transition-all group mbl:grid-cols-1 mbl:gap-8"
         >
           <div>
             <img
