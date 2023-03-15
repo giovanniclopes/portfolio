@@ -1,8 +1,33 @@
 import { CaretDown } from "phosphor-react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+
+const boxVariant = {
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.7 } },
+  hidden: { opacity: 0, scale: 0 },
+};
+
 
 export default function WelcomeSection() {
+    const control = useAnimation();
+    const [ref, inView] = useInView();
+
+    useEffect(() => {
+      if (inView) {
+        control.start("visible");
+      } else {
+        control.start("hidden");
+      }
+    }, [control, inView]);
+
   return (
-    <section>
+    <motion.section
+      ref={ref}
+      variants={boxVariant}
+      initial="hidden"
+      animate={control}
+    >
       <div className="flex flex-col items-center justify-center gap-5 font-bold">
         <div>
           <h1 className="text-7xl mbl:text-4xl">Olá! Sou Giovanni</h1>
@@ -28,6 +53,6 @@ export default function WelcomeSection() {
           />
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
