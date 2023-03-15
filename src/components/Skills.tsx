@@ -5,10 +5,12 @@ import WpIcon from "../assets/icons/wpIcon";
 import SectionTitles from "./SectionTitles";
 import SkillBox from "./SkillBlock";
 
-
 export default function Skills() {
   return (
-    <section id="skills" className="skills flex flex-col items-center justify-center gap-5 mt-8">
+    <section
+      id="skills"
+      className="skills flex flex-col items-center justify-center gap-5 mt-8"
+    >
       <div className="my-5 mb-12">
         <SectionTitles title="Skills" />
       </div>
@@ -17,7 +19,7 @@ export default function Skills() {
         <SkillBox title={"CSS"} icon={<CssIcon />} />
       </div>
       <div className="flex flex-row gap-2 mbl:flex-col">
-        <SkillBox title={"JavaScript"} icon={<JsIcon /> } />
+        <SkillBox title={"JavaScript"} icon={<JsIcon />} />
         <SkillBox title={"WordPress"} icon={<WpIcon />} />
       </div>
     </section>
