@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply font-sans bg-cityBg bg-cover bg-fixed bg-right text-gray-50;
+  @apply font-sans bg-gray-500 bg-cityBg bg-cover bg-fixed bg-right text-gray-50;
   -webkit-font-smoothing: antialiased;
 }
 
