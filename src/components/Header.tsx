@@ -27,11 +27,6 @@ export function Header() {
     setTogglerNav(!togglerNav);
   };
 
-  let activeStyle = {
-    textDecoration: "underline",
-    color: "white",
-  };
-
   return (
     <header>
       <nav
@@ -49,28 +44,28 @@ export function Header() {
           }
         >
           <AnchorLink
-            className="transition-all hover:text-white"
+            className="transition-all hover:text-red-500"
             onClick={clickHandler}
             href="#about"
           >
             Sobre mim
           </AnchorLink>
           <AnchorLink
-            className="transition-all hover:text-white"
+            className="transition-all hover:text-red-500"
             onClick={clickHandler}
             href="#skills"
           >
             Skills
           </AnchorLink>
           <AnchorLink
-            className="transition-all hover:text-white"
+            className="transition-all hover:text-red-500"
             onClick={clickHandler}
             href="#projects"
           >
             Projetos
           </AnchorLink>
           <AnchorLink
-            className="transition-all hover:text-white"
+            className="transition-all hover:text-red-500"
             onClick={clickHandler}
             href="#contact"
           >
@@ -82,13 +77,28 @@ export function Header() {
             to="https://linkedin.com/in/giovanni-lopes21"
             target="_blank"
           >
-            <LinkedinLogo width={28} height={28} weight="fill" />
+            <LinkedinLogo
+              className="transition-all hover:rotate-6 hover:text-red-500"
+              width={28}
+              height={28}
+              weight="fill"
+            />
           </NavLink>
           <NavLink to="https://github.com/giovanniclopes" target="_blank">
-            <GithubLogo width={28} height={28} weight="fill" />
+            <GithubLogo
+              className="transition-all hover:rotate-6 hover:text-red-500"
+              width={28}
+              height={28}
+              weight="fill"
+            />
           </NavLink>
           <NavLink to="emailto:giovanniclopes@gmail.com" target="_blank">
-            <EnvelopeSimple width={28} height={28} weight="fill" />
+            <EnvelopeSimple
+              className="transition-all hover:rotate-6 hover:text-red-500"
+              width={28}
+              height={28}
+              weight="fill"
+            />
           </NavLink>
         </div>
         <button
