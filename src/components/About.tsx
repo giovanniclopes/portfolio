@@ -23,7 +23,7 @@ export default function About() {
   var monthDiff = Date.now() - myBirthDate.getTime();
   var myAgeDateFormat = new Date(monthDiff);
   var currentYear = myAgeDateFormat.getUTCFullYear();
-  var myCurrentAge = Math.abs(currentYear - 2005);
+  var myCurrentAge = Math.abs(currentYear - 2004);
 
   return (
     <motion.section

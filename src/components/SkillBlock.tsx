@@ -33,7 +33,7 @@ export default function SkillBlock(props: SkillBox) {
       initial="hidden"
       animate={control}
     >
-      <div className="flex flex-row items-center content-center self-center justify-center gap-3 bg-gray-400 w-96 h-24 rounded-lg">
+      <div className="flex flex-row items-center content-center self-center justify-center gap-3 bg-gray-400 w-96 h-24 rounded-lg cursor-pointer transition-all hover:brightness-90">
         <div className="w-10 h-10">
           <>{props.icon}</>
         </div>

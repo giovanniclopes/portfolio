@@ -7,6 +7,7 @@ import EventPlatform from "../assets/projects/project-eventplatform.webp";
 import Calculator from "../assets/projects/project-calculator.webp";
 import Nordician2 from "../assets/projects/project-nordician2.webp";
 import EdgeLine from "../assets/projects/project-edgeline.webp";
+import ArrowDrawIcon from "../assets/icons/ArrowDrawIcon";
 
 export default function Projects() {
   return (
@@ -45,6 +46,17 @@ export default function Projects() {
             "Aqui você irá descobrir os mistérios e as verdades pro trás da grande internet."
           }
         />
+      </div>
+
+      <div className="flex flex-row items-center justify-end gap-4 mt-7">
+        <a
+          href="https://github.com/giovanniclopes?tab=repositories&type=source"
+          target="_blank"
+        >
+          <div className="text-xl border-2 border-red-500 p-3 px-9 rounded cursor-pointer transition-all hover:bg-red-500">
+            Ver todos os projetos...
+          </div>
+        </a>
       </div>
     </section>
   );
