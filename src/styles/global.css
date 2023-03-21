@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  @apply bg-cityBg bg-cover bg-fixed bg-right;
+}
+
 body {
   @apply font-sans bg-cityBg bg-cover bg-fixed bg-right text-gray-50;
   -webkit-font-smoothing: antialiased;
