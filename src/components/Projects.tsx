@@ -33,7 +33,7 @@ export default function Projects() {
           }
         />
         <ProjectBlock
-          linkURL={"https://giovanniclopes.github.com/edgeline"}
+          linkURL={"https://giovanniclopes.github.io/EdgeLine/"}
           imgURL={EdgeLine}
           title={"EdgeLine"}
           description={"Protótipo de website de vendas de HQs."}
