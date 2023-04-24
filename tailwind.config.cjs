@@ -11,7 +11,7 @@ module.exports = {
         sans: "Poppins, sans-serif",
       },
       backgroundImage: {
-        cityBg: "url(./src/assets/background.png)",
+        cityBg: "url(src/assets/background.png)",
       },
       colors: {
         gray: {
